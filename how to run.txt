@@ -1,0 +1,9 @@
+gcc 01_tryout_sequential.c -o 01_tryout_sequential
+./01_tryout_sequential
+
+gcc -fopenmp -Wall -o 02_tryout_openmp 02_tryout_openmp.c
+./02_tryout_openmp
+
+
+mpicc 03_tryout_mpi_lastv1.c -o 03_tryout_mpi_lastv1
+mpirun -np 5 ./03_tryout_mpi_lastv1
